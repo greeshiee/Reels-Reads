@@ -1,0 +1,224 @@
+.sign-up,
+.sign-up * {
+    box-sizing: border-box;
+}
+.sign-up {
+    background: #e7d7c9;
+    height: 832px;
+    position: relative;
+    overflow: hidden;
+}
+.create-account {
+    color: #000000;
+    text-align: right;
+    font-family: "Adamina", serif;
+    font-size: 43px;
+    font-weight: 400;
+    position: absolute;
+    left: calc(50% - -151px);
+    top: 201px;
+    width: 332px;
+    height: 60px;
+}
+
+.username {
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter-Light", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 424.46px;
+    height: 54.16px;
+    position: absolute;
+    left: 753px;
+    top: 447.81px;
+    border: none;
+}
+
+.password {
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter-Light", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 424.46px;
+    height: 54.16px;
+    position: absolute;
+    left: 753px;
+    top: 513.82px;
+}
+
+
+.confirm-password {
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter-Light", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 424.46px;
+    height: 54.16px;
+    position: absolute;
+    left: 753px;
+    top: 579.84px;
+}
+
+
+.email {
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter-Light", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 424.46px;
+    height: 54.16px;
+    position: absolute;
+    left: 753px;
+    top: 381.8px;
+}
+
+.sign-up-button {
+    background: #d4b2a7;
+    border-radius: 15px;
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Light", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    opacity: 0.949999988079071;
+    position: absolute;
+    left: calc(50% - -124.46px);
+    top: 678px;
+    width: 413px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.first-name {
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter-Light", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 192px;
+    height: 54.16px;
+    position: absolute;
+    left: 753px;
+    top: 315.79px;
+}
+
+
+.last-name {
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter-Light", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 217.77px;
+    height: 54.16px;
+    position: absolute;
+    left: 957px;
+    top: 316px;
+}
+.already-a-member-log-in {
+    color: #000000;
+    text-align: right;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    opacity: 0.8999999761581421;
+    position: absolute;
+    left: calc(50% - -177px);
+    top: 261px;
+    width: 296px;
+    height: 24px;
+}
+.already-a-member-log-in-span {
+    color: #000000;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.already-a-member-log-in-span2 {
+    color: #000000;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.image {
+    width: 632px;
+    height: 595px;
+    position: absolute;
+    left: 0px;
+    top: 192px;
+    object-fit: cover;
+}
+.header-bg {
+    background: #a38f85;
+    width: 1231px;
+    height: 134px;
+    position: absolute;
+    left: calc(50% - 615px);
+    top: 29px;
+}
+.arrow-left img{
+    width: 3.52%;
+    height: 3.91%;
+    position: absolute;
+    right: 91.87%;
+    left: 4.61%;
+    bottom: 86.48%;
+    top: 9.62%;
+    overflow: visible;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+.profile img{
+    width: 3.68%;
+    height: 5.76%;
+    position: absolute;
+    right: 5.93%;
+    left: 90.39%;
+    bottom: 86.31%;
+    top: 7.93%;
+    overflow: visible;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+.logo img{
+    width: 137px;
+    height: 102px;
+    position: absolute;
+    left: 121px;
+    top: 45px;
+    object-fit: cover;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
