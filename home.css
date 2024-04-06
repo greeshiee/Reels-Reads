@@ -1,0 +1,180 @@
+body,
+html {
+  background-color: #e7d7c9;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  background: #a38f85;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px;
+  height: 106px;
+  padding: 18px;
+  /* Adjust height as needed */
+}
+
+.logo {
+  max-width: 100%;
+  width: 137px;
+  height: auto;
+  padding: 18px;
+}
+
+.search-container {
+  background-color: #e7d7c9;
+  padding: 8px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.search-icon {
+  padding-right: 6px;
+}
+
+.search-text-box {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.right-side {
+  display: flex;
+  justify-content: space-evenly;
+  flex-shrink: 1;
+  gap: 12px;
+  width: 600px;
+}
+
+.in-progress-container,
+.finished-container {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.sliding-tile-container {
+  display: flex;
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  white-space: nowrap;
+  /* Prevent tiles from wrapping to the next line */
+  padding: 10px;
+  /* Add some padding for spacing */
+  gap: 20px;
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.tile {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 200px;
+  /* Set the width of each tile */
+  height: 200px;
+  /* Set the height of each tile */
+  background-color: #D4B2A7;
+  /* Set background color */
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* Add some spacing between tiles */
+  display: inline-block;
+  /* Display tiles inline */
+  border-radius: 5px;
+  /* Add rounded corners if desired */
+  text-align: center;
+  /* Center text within tiles */
+  line-height: 150px;
+  /* Vertically center text */
+  border-radius: 10px;
+}
+
+.title-text {
+  font-size: 26px;
+  font-weight: 500;
+  padding-left: 6px;
+}
+
+.status-description {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+
+.recommendation-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  flex-grow: 2;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.page-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recents-container {
+  align-self: flex-start;
+}
+
+.recommendations-header {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.rec-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.divider {
+  border-left: 2px solid rgb(48, 36, 24);
+  height: 800px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: -50px;
+
+  align-self: flex-start;
+}
+
+.recommended-tile-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 200px;
+  max-width: 60%;
+}
+
+.rec-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 800px;
+}
+
+.rec-title {
+  font-size: 26px;
+  font-weight: 400;
+}
