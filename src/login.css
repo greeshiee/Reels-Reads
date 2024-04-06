@@ -27,7 +27,7 @@
 .password {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
@@ -44,7 +44,7 @@
 .email-username {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
@@ -60,7 +60,7 @@
 .log-in-button {
     color: #000000;
     text-align: center;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 36px;
     font-weight: 300;
     background: #d4b2a7;
