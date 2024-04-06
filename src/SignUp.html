@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="signup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,7 +20,12 @@
 
     <input class="confirm-password" type = "password" placeholder="Confirm Password" />
     <input class="email" type = "email" placeholder="Email" />
-    <button class="sign-up-button">Sign Up</button>
+    <button class="sign-up-button" onclick="signup()">Sign Up</button>
+    <script>
+        function signup(){
+            window.location.href = "#"; //this would go to the home page
+        }
+    </script>
     <input class="first-name" placeholder="First Name" />
     <div class="rectangle-8"></div>
     <input class="last-name" placeholder="Last Name" />
@@ -30,19 +35,19 @@
       <span class="already-a-member-log-in-span2">Log In</span>
     </span>
     </a>
-    <img class="image" src="image.png" />
-    <div header>
+    <img class="image" src="../assets/image.png" />
+    <div class ="header">
         <div class="header-bg"></div>
-        <a href="#" class="arrow-left">
-            <img src="arrow-left.svg" />
+        <a href="Landing.html" class="arrow-left">
+            <img src="../assets/arrow-left.svg" />
         </a>
 
         <a href="#" class="profile">
-            <img src="user-circle.svg" />
+            <img src="../assets/user-circle.svg" />
         </a>
 
-        <a href="#" class="logo">
-            <img src="Logo.png" />
+        <a href="Landing.html" class="logo">
+            <img src="../assets/Logo.png" />
         </a>
     </div>
 </div>

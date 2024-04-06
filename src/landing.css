@@ -1,0 +1,141 @@
+.landing-page,
+.landing-page * {
+    box-sizing: border-box;
+}
+.landing-page {
+    background: #e7d7c9;
+    height: 832px;
+    position: relative;
+    overflow: hidden;
+}
+.image {
+    opacity: 0.4000000059604645;
+    width: 1211px;
+    height: 581px;
+    position: absolute;
+    left: 32px;
+    top: 213px;
+    object-fit: cover;
+}
+.group-1 {
+    position: absolute;
+    inset: 0;
+}
+.header-bg {
+    background: #a38f85;
+    width: 1231px;
+    height: 134px;
+    position: absolute;
+    left: 32px;
+    top: 22px;
+}
+.read-watch-and-save {
+    color: #000000;
+    text-align: center;
+    font-family: "Adamina", serif;
+    font-size: 64px;
+    font-weight: 400;
+    position: absolute;
+    left: 202px;
+    top: 320px;
+    width: 911px;
+    height: 107px;
+}
+.arrow-left img{
+    width: 3.52%;
+    height: 3.91%;
+    position: absolute;
+    right: 91.87%;
+    left: 4.61%;
+    bottom: 86.48%;
+    top: 9.62%;
+    overflow: visible;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+.profile img{
+    width: 3.68%;
+    height: 5.76%;
+    position: absolute;
+    right: 5.93%;
+    left: 90.39%;
+    bottom: 86.31%;
+    top: 7.93%;
+    overflow: visible;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+.logo img{
+    width: 137px;
+    height: 102px;
+    position: absolute;
+    left: 45px;
+    top: 45px;
+    object-fit: cover;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-bar {
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 445px;
+    height: 64px;
+    position: absolute;
+    left: 657px;
+    top: 57px;
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+}
+
+.search {
+    width: 1.64%;
+    height: 2.52%;
+    position: absolute;
+    right: 14.14%;
+    left: 84.22%;
+    bottom: 87.5%;
+    top: 8.7%;
+    overflow: visible;
+}
+
+
+.get-started {
+    background: #e7d7c9;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    width: 366px;
+    height: 76px;
+    position: absolute;
+    left: 474px;
+    top: 517px;
+    color: #000000;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.vector2 {
+    width: 3.68%;
+    height: 5.76%;
+    position: absolute;
+    right: 5.46%;
+    left: 90.86%;
+    bottom: 86.55%;
+    top: 7.69%;
+    overflow: visible;
+}

@@ -1,46 +1,33 @@
-.sign-up,
-.sign-up * {
+.log-in,
+.log-in * {
     box-sizing: border-box;
 }
-.sign-up {
+.log-in {
     background: #e7d7c9;
     height: 832px;
     position: relative;
     overflow: hidden;
 }
-.create-account {
+
+
+.log-in2 {
     color: #000000;
-    text-align: right;
-    font-family: "Adamina", serif;
+    text-align: left;
+    font-family: "Adamina", sans-serif;
     font-size: 43px;
     font-weight: 400;
     position: absolute;
-    left: calc(50% - -151px);
-    top: 201px;
+    left: calc(50% - 489px);
+    top: 293px;
     width: 332px;
     height: 60px;
 }
 
-.username {
-    color: #9f9f9f;
-    text-align: left;
-    font-family: "Inter-Light", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    background: #ede9e3;
-    border-radius: 15px;
-    width: 424.46px;
-    height: 54.16px;
-    position: absolute;
-    left: 753px;
-    top: 447.81px;
-    border: none;
-}
 
 .password {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
@@ -49,15 +36,15 @@
     width: 424.46px;
     height: 54.16px;
     position: absolute;
-    left: 753px;
-    top: 513.82px;
+    left: 135px;
+    top: 498px;
 }
 
 
-.confirm-password {
+.email-username {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
@@ -66,100 +53,48 @@
     width: 424.46px;
     height: 54.16px;
     position: absolute;
-    left: 753px;
-    top: 579.84px;
+    left: 135px;
+    top: 422.8px;
 }
 
-
-.email {
-    color: #9f9f9f;
-    text-align: left;
-    font-family: "Inter-Light", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    border: none;
-    background: #ede9e3;
-    border-radius: 15px;
-    width: 424.46px;
-    height: 54.16px;
-    position: absolute;
-    left: 753px;
-    top: 381.8px;
-}
-
-.sign-up-button {
-    background: #d4b2a7;
-    border-radius: 15px;
+.log-in-button {
     color: #000000;
     text-align: center;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 36px;
     font-weight: 300;
-    opacity: 0.949999988079071;
-    position: absolute;
-    left: calc(50% - -124.46px);
-    top: 678px;
-    width: 413px;
+    background: #d4b2a7;
+    border-radius: 15px;
+    width: 418px;
     height: 75px;
-    display: flex;
-    align-items: center;
+    position: absolute;
+    left: 135px;
+    top: 583px;
     justify-content: center;
     border: none;
     cursor: pointer;
 }
 
-.first-name {
-    color: #9f9f9f;
-    text-align: left;
-    font-family: "Inter-Light", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    border: none;
-    background: #ede9e3;
-    border-radius: 15px;
-    width: 192px;
-    height: 54.16px;
-    position: absolute;
-    left: 753px;
-    top: 315.79px;
-}
-
-
-.last-name {
-    color: #9f9f9f;
-    text-align: left;
-    font-family: "Inter-Light", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    border: none;
-    background: #ede9e3;
-    border-radius: 15px;
-    width: 217.77px;
-    height: 54.16px;
-    position: absolute;
-    left: 957px;
-    top: 316px;
-}
-.already-a-member-log-in {
+.not-a-member-sign-up {
     color: #000000;
-    text-align: right;
+    text-align: left;
     font-family: "Inter-Regular", sans-serif;
     font-size: 24px;
     font-weight: 400;
     opacity: 0.8999999761581421;
     position: absolute;
-    left: calc(50% - -177px);
-    top: 261px;
+    left: calc(50% - 486px);
+    top: 360px;
     width: 296px;
     height: 24px;
 }
-.already-a-member-log-in-span {
+.not-a-member-sign-up-span {
     color: #000000;
     font-family: "Inter-Regular", sans-serif;
     font-size: 24px;
     font-weight: 400;
 }
-.already-a-member-log-in-span2 {
+.not-a-member-sign-up-span2 {
     color: #000000;
     font-family: "Inter-Regular", sans-serif;
     font-size: 24px;
@@ -170,8 +105,8 @@
     width: 632px;
     height: 595px;
     position: absolute;
-    left: 0px;
-    top: 192px;
+    left: 676px;
+    top: 203px;
     object-fit: cover;
 }
 .header-bg {
