@@ -24,7 +24,7 @@
 .username {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     background: #ede9e3;
@@ -40,7 +40,7 @@
 .password {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
@@ -57,7 +57,7 @@
 .confirm-password {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
@@ -74,7 +74,7 @@
 .email {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
@@ -92,7 +92,7 @@
     border-radius: 15px;
     color: #000000;
     text-align: center;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 36px;
     font-weight: 300;
     opacity: 0.949999988079071;
@@ -111,7 +111,7 @@
 .first-name {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
@@ -128,7 +128,7 @@
 .last-name {
     color: #9f9f9f;
     text-align: left;
-    font-family: "Inter-Light", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 300;
     border: none;
