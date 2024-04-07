@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link ref="stylesheet" href="../css/addMedia.css">
+  <link rel="stylesheet" type="text/css" href="../css/addMedia.css">
   <title>Add to Profile</title>
 </head>
 
@@ -28,6 +28,24 @@
       <img class="user-icon" src="../assets/user-circle.svg">
     </div>
   </header>
+  <div class="container">
+    <div class="add-media-heading">Add Media To Profile</div>
+    <input class="title-input" type="text" placeholder="Title">
+    <select class="type-selector">
+      <option value="book">Book</option>
+      <option value="movie">Movie</option>
+    </select>
+    <form class="media-type-selector">
+      <input type="radio" id="in-progress" name="options" value="in-progress">
+      <label for="option1">In progress</label><br>
+
+      <input type="radio" id="finished" name="options" value="finished">
+      <label for="option2">Finished</label><br>
+    </form>
+    <button class="add-button" type="button">
+      Add
+    </button>
+  </div>
 </body>
 
 </html>
