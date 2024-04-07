@@ -23,6 +23,13 @@ html {
   padding: 18px;
 }
 
+.search-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 .search-container {
   background-color: #ede9e3;
   padding: 8px;
@@ -54,43 +61,32 @@ html {
   width: 600px;
 }
 
-.page-container {
+.container {
   display: flex;
-  justify-content: space-between;
-  margin: 100px;
-}
-
-.profile-container {
-  display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 
-.pfp {
-  width: 200px;
-  height: auto;
-  justify-content: left;
-}
-
-.description-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.profile-heading {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.extra {
-  justify-self: flex-end;
+#main-search {
+  justify-self: center;
   align-self: center;
+  width: 800px;
+  height: 50px;
+  border-radius: 20px;
+  padding-left: 20px;
+  gap: 10px;
+  /* margin-left: auto; */
 }
 
-.in-progress-container,
-.finished-container {
+
+#main-search input {
+  font-size: 24px;
+}
+
+.search-row {
   margin-left: 100px;
   margin-bottom: 50px;
+  align-self: center;
 }
 
 .sliding-tile-container {
@@ -101,7 +97,7 @@ html {
   /* Prevent tiles from wrapping to the next line */
   padding: 10px;
   /* Add some padding for spacing */
-  gap: 20px;
+  gap: 60px;
 }
 
 .tile-container {
@@ -144,7 +140,39 @@ html {
   padding-left: 6px;
 }
 
-.status-description {
+.search-heading {
   font-size: 40px;
   font-weight: 400;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  align-self: flex-start;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-button {
+  background-color: #D4B2A7;
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px;
+  border-radius: 30px;
+  border-color: transparent;
+
+}
+
+.search-settings-buttons {
+  background-color: #D4B2A7;
+  text-align: center;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 40px;
+  border-radius: 10px;
+  border-color: transparent;
 }
