@@ -4,9 +4,9 @@ INSERT INTO USER_INFO (ID, FName, LName, Email, Password) VALUES
 (2, 'Bob', 'Johnson', 'bob.johnson@example.com', 'password456');
 
 -- Insert sample data into MEDIA (Books and Movies)
-INSERT INTO MEDIA (ID, Title, Genre, Description) VALUES
-('B1001', 'The Great Gatsby', 'Fiction', 'A novel set in the Jazz Age...'),
-('M2001', 'Inception', 'Action', 'A thief who steals corporate secrets...');
+INSERT INTO MEDIA (ID, Title, Genre, ImageName, Description) VALUES
+('B1001', 'The Great Gatsby', 'Fiction', 'image0.jpg', 'A novel set in the Jazz Age...'),
+('M2001', 'Inception', 'Action', 'image1.jpg', 'A thief who steals corporate secrets...');
 
 -- Insert specific book and movie details
 INSERT INTO BOOKS (ISBN, Author, Publisher) VALUES
