@@ -1,7 +1,7 @@
 -- Insert sample data into USER
-INSERT INTO USER_INFO (ID, FName, LName, Email, Password) VALUES
-(1, 'Alice', 'Smith', 'alice.smith@example.com', 'pass123'),
-(2, 'Bob', 'Johnson', 'bob.johnson@example.com', 'password456');
+INSERT INTO USER_INFO (FName, LName, Username, Email, Pass) VALUES
+('Alice', 'Smith', 'AliceS', 'alice.smith@example.com', 'pass123'),
+('Bob', 'Johnson', 'BobJ', 'bob.johnson@example.com', 'password456');
 
 -- Insert sample data into MEDIA (Books and Movies)
 INSERT INTO MEDIA (ID, Title, Genre, ImageName, Description) VALUES
@@ -16,6 +16,6 @@ INSERT INTO MOVIES (MID, Director, Studio) VALUES
 ('M2001', 'Christopher Nolan', 'Warner Bros');
 
 -- Insert user preferences
-INSERT INTO USER_PREFERENCES (UserID, MediaID, Rating, Status) VALUES
+INSERT INTO USER_PREFERENCES (UserID, MediaID, Rating, CompletionStatus) VALUES
 (1, 'B1001', 5, 2),
 (2, 'M2001', 4, 2);
