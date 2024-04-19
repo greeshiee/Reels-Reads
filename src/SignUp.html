@@ -11,24 +11,18 @@
 <body>
 
 <div class="sign-up">
-    <div class="create-account">Create Account</div>
-    <input class="username" placeholder="Username" />
+    <form action="register.php" method="POST">
+        <div class="create-account">Create Account</div>
+        <input class="first-name" placeholder="First Name" name="fname"/>
+        <input class="last-name" placeholder="Last Name" name="lname"/>
+        <input class="email" type = "email" placeholder="Email" name="email"/>
+        <input class="username" placeholder="Username" name="username"/>
+        <input class="password" type = "password" placeholder="Password" name="password"/>
+        <input class="confirm-password" type = "password" placeholder="Confirm Password" name="confirmpass"/>
+        <input class="sign-up-button" type ="submit" value="Sign Up" name="signUp"></input>
+    </form>
 
-    <div>
-        <input class="password" type = "password" placeholder="Password" />
-    </div>
-
-    <input class="confirm-password" type = "password" placeholder="Confirm Password" />
-    <input class="email" type = "email" placeholder="Email" />
-    <button class="sign-up-button" onclick="signup()">Sign Up</button>
-    <script>
-        function signup(){
-            window.location.href = "#"; //this would go to the home page
-        }
-    </script>
-    <input class="first-name" placeholder="First Name" />
     <div class="rectangle-8"></div>
-    <input class="last-name" placeholder="Last Name" />
     <a href="LogIn.html" class = "already-a-member-log-in">
     <span>
       <span class="already-a-member-log-in-span">Already a member?</span>
@@ -42,7 +36,7 @@
             <img src="../assets/arrow-left.svg" />
         </a>
 
-        <a href="#" class="profile">
+        <a href="profile.html" class="profile">
             <img src="../assets/user-circle.svg" />
         </a>
 
