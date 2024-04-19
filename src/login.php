@@ -11,7 +11,7 @@
         if($result->num_rows>0){
             session_start();
             $row=$result->fetch_assoc();
-            $_SESSION['email']=$row['email'];
+            $_SESSION['email']=$row['Email'];
             header("Location: home.html");
             exit();
         }
