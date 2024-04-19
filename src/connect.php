@@ -7,7 +7,4 @@
     if($conn->connect_error){
         echo "Failed to connect to DB".$conn->connect_error;
     }
-    else{
-        echo "Connected to DB";
-    }
 ?>
