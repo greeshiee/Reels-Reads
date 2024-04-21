@@ -92,6 +92,10 @@
             <div class=\"tile-container\">
               <img class=\"tile\" src=\"$imPath\">
               <div class=\"title-text\">$title</div>
+              <div class = \"button-container\" style=\"float: left;\">
+                <button class=\"media-button\">Remove</button>
+                <button class=\"media-button\">Finished</button>
+              </div>
             </div>";
         }
       ?>
@@ -117,6 +121,10 @@
               <div class=\"tile-container\">
                 <img class=\"tile\" src=\"$imPath\">
                 <div class=\"title-text\">$title</div>
+                <div class = \"button-container\" style=\"float: left;\">
+                  <button class=\"media-button\">Remove</button>
+                  <button class=\"media-button\">In Progress</button>
+                </div>
               </div>";
           }
         ?>
