@@ -12,6 +12,7 @@
             session_start();
             $row=$result->fetch_assoc();
             $_SESSION['email']=$row['Email'];
+            $_SESSION['id'] = $row["ID"];
             header("Location: home.html");
             exit();
         }
