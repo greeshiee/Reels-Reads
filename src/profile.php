@@ -61,7 +61,11 @@
         </div>
         <div class = "button-container">
           <form id="logout-form" action="logout.php" method="post">
-            <button class="logout-button" onclick()="Logout()">Log Out</button>
+            <button class="logout-button" style="margin-right: 10px;">Log Out</button>
+          </form>
+
+          <form id="update-form" action="update.php" method="post">
+            <button class="update-button">Update</button>
           </form>
         </div>
       </div>
