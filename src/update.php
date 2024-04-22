@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+<?php
+    include 'connect.php';
+    session_start();
+?>
 <div class="update">
     <header class="flex-container">
         <a href="#"><img class="logo" src="../assets/Logo.png" alt="Reels & Reads"></a>
@@ -34,12 +38,40 @@
 
     <div class="update-form">
         <p class="update">Update Profile</p>
-        <form action="update.php" method="POST" class="form">
+        <form action="updateForm.php" method="POST" class="form">
+            <?php
+            // Assuming you have established a database connection already and stored it in $conn
+
+            // Retrieve the fName, lName, and username from the database for a specific user
+            $id = $_SESSION['id']; // Assuming you have the user's ID in session
+
+            // Perform a SELECT query
+            $selectQuery = "SELECT FName, LName, username FROM USER_INFO WHERE ID = '$id'";
+            $result = $conn->query($selectQuery);
+
+            // Initialize variables for storing values
+            $fName = "";
+            $lName = "";
+            $username = "";
+
+            // Check if the query executed successfully and returned a row
+            if ($result && $result->num_rows > 0) {
+                // Fetch the row
+                $row = $result->fetch_assoc();
+
+                // Extract the fName, lName, and username values
+                $fName = $row['FName'];
+                $lName = $row['LName'];
+                $username = $row['username'];
+            }
+
+            // Output the input fields with the retrieved values
+            ?>
             <div class="name-container">
-                <input class="fName" placeholder="First Name" name="fName">
-                <input class="lName" placeholder="Last Name" name="lName">
+                <input class="fName" value="<?php echo $fName; ?>" name="fName">
+                <input class="lName" value="<?php echo $lName; ?>" name="lName">
             </div>
-            <input class="username" placeholder="Username" name="username">
+            <input class="username" value="<?php echo $username; ?>" name="username">
             <input class="update-button" type="submit" value="Update" name="updateProfile">
         </form>
     </div>
