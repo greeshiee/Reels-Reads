@@ -79,10 +79,11 @@
     <div class="in-progress-container">
       <div class="status-description">In Progress</div>
       <div class="sliding-tile-container">
-      <?php
-        // In progress. Is there something for want to watch/read?
-        $id=$_SESSION["id"];
+        <?php
+          // In progress. Is there something for want to watch/read?
+          $id=$_SESSION["id"];
 
+<<<<<<< HEAD
         $sql = "
         SELECT Title, ImageName
         FROM USER_INFO a,USER_PREFERENCES b,MEDIA c
@@ -103,6 +104,40 @@
             </div>";
         }
       ?>
+=======
+          $sql = "
+          SELECT Title, ImageName, c.ID
+          FROM USER_INFO a,USER_PREFERENCES b,MEDIA c
+          WHERE a.ID=$id AND UserID=$id AND c.ID=b.MediaID AND b.CompletionStatus=1
+          ";
+          $result = $conn->query($sql);
+          while ($cur_book = $result->fetch_assoc()) {
+            $title = $cur_book["Title"];
+            $imPath = $cur_book["ImageName"];
+            $mId = $cur_book["ID"];
+            echo "
+              <div class=\"tile-container\">
+                <img class=\"tile\" src=\"$imPath\">
+                <div class=\"title-text\">$title</div>
+                <div class = \"button-container\" style=\"float: left; display:flex\">
+                <form action=\"UpdateMedia.php\" method=\"POST\">
+                  <input type=\"text\" name=\"MediaID\" value=\"$mId\" style=\"display:none;\"></input>
+                  <input type=\"text\" name=\"UpdateType\" value=\"Finished\" style=\"display:none;\"></input>
+                  <input class=\"media-button\" type= \"submit\" value=\"Finished\"></input>
+                </form>
+                <form action=\"UpdateMedia.php\" method=\"POST\">
+                  <input type=\"text\" name=\"MediaID\" value=\"$mId\" style=\"display:none;\"></input>
+                  <input type=\"text\" name=\"UpdateType\" value=\"Remove\" style=\"display:none;\"></input>
+                  <input class=\"media-button\" type= \"submit\" value=\"Remove\"></input>
+                </form>
+                </div>
+              </div>";
+              echo "
+              
+              ";
+            }
+        ?>
+>>>>>>> media-update
       </div>
     </div>
     <div class="finished-container">
@@ -113,7 +148,7 @@
           $id=$_SESSION["id"];
 
           $sql = "
-          SELECT Title, ImageName
+          SELECT Title, ImageName, c.ID
           FROM USER_INFO a,USER_PREFERENCES b,MEDIA c
           WHERE a.ID=$id AND UserID=$id AND c.ID=b.MediaID AND b.CompletionStatus=2
           ";
@@ -121,15 +156,27 @@
           while ($cur_book = $result->fetch_assoc()) {
             $title = $cur_book["Title"];
             $imPath = $cur_book["ImageName"];
+            $mId = $cur_book["ID"];
             echo "
               <div class=\"tile-container\">
                 <img class=\"tile\" src=\"../assets/{$imPath}\">
                 <div class=\"title-text\">$title</div>
-                <div class = \"button-container\" style=\"float: left;\">
-                  <button class=\"media-button\">Remove</button>
-                  <button class=\"media-button\">In Progress</button>
+                <div class = \"button-container\" style=\"float: left; display:flex\">
+                <form action=\"UpdateMedia.php\" method=\"POST\">
+                  <input type=\"text\" name=\"MediaID\" value=\"$mId\" style=\"display:none;\"></input>
+                  <input type=\"text\" name=\"UpdateType\" value=\"In Progress\" style=\"display:none;\"></input>
+                  <input class=\"media-button\" type= \"submit\" value=\"In Progress\"></input>
+                </form>
+                <form action=\"UpdateMedia.php\" method=\"POST\">
+                  <input type=\"text\" name=\"MediaID\" value=\"$mId\" style=\"display:none;\"></input>
+                  <input type=\"text\" name=\"UpdateType\" value=\"Remove\" style=\"display:none;\"></input>
+                  <input class=\"media-button\" type= \"submit\" value=\"Remove\"></input>
+                </form>
                 </div>
               </div>";
+              echo "
+              
+              ";
           }
         ?>
       </div>
