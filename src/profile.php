@@ -83,28 +83,6 @@
           // In progress. Is there something for want to watch/read?
           $id=$_SESSION["id"];
 
-<<<<<<< HEAD
-        $sql = "
-        SELECT Title, ImageName
-        FROM USER_INFO a,USER_PREFERENCES b,MEDIA c
-        WHERE a.ID=$id AND UserID=$id AND c.ID=b.MediaID AND b.CompletionStatus=1
-        ";
-        $result = $conn->query($sql);
-        while ($cur_book = $result->fetch_assoc()) {
-          $title = $cur_book["Title"];
-          $imPath = $cur_book["ImageName"];
-          echo "
-            <div class=\"tile-container\">
-              <img class=\"tile\" src=\"../assets/$imPath\">
-              <div class=\"title-text\">$title</div>
-              <div class = \"button-container\" style=\"float: left;\">
-                <button class=\"media-button\">Remove</button>
-                <button class=\"media-button\">Finished</button>
-              </div>
-            </div>";
-        }
-      ?>
-=======
           $sql = "
           SELECT Title, ImageName, c.ID
           FROM USER_INFO a,USER_PREFERENCES b,MEDIA c
@@ -137,7 +115,6 @@
               ";
             }
         ?>
->>>>>>> media-update
       </div>
     </div>
     <div class="finished-container">
