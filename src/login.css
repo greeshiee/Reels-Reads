@@ -9,20 +9,100 @@
     overflow: hidden;
 }
 
-
-.log-in2 {
-    color: #000000;
-    text-align: left;
-    font-family: "Adamina", sans-serif;
-    font-size: 43px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(50% - 489px);
-    top: 293px;
-    width: 332px;
-    height: 60px;
+html {
+    background-color: #e7d7c9;
+    margin: 0;
+    padding: 0;
 }
 
+.flex-container {
+    background: #a38f85;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px;
+    padding: 18px;
+    /* Adjust height as needed */
+}
+
+.logo {
+    max-width: 100%;
+    width: 137px;
+    height: auto;
+    padding: 18px;
+}
+
+.search-container {
+    background-color: #ede9e3;
+    padding: 8px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.search-icon {
+    padding-right: 6px;
+}
+
+.search-text-box {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    flex-shrink: 1;
+    width: 600px;
+}
+
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+
+.log-in-form{
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    float: right;
+    margin-left: 10px;
+}
+
+
+
+.log-in-text{
+    color: #000000;
+    text-align: left;
+    font-family: "Adamina", serif;
+    font-size: 43px;
+    font-weight: 400;
+}
+
+.not-a-member-sign-up{
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
 
 .password {
     color: #9f9f9f;
@@ -35,9 +115,7 @@
     border-radius: 15px;
     width: 424.46px;
     height: 54.16px;
-    position: absolute;
-    left: 135px;
-    top: 498px;
+    margin-top: 2%;
 }
 
 
@@ -52,9 +130,7 @@
     border-radius: 15px;
     width: 424.46px;
     height: 54.16px;
-    position: absolute;
-    left: 135px;
-    top: 422.8px;
+    margin-top: 2%;
 }
 
 .log-in-button {
@@ -67,93 +143,11 @@
     border-radius: 15px;
     width: 418px;
     height: 75px;
-    position: absolute;
-    left: 135px;
-    top: 583px;
     justify-content: center;
     border: none;
     cursor: pointer;
+    margin-top: 2%;
+
 }
 
-.not-a-member-sign-up {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    opacity: 0.8999999761581421;
-    position: absolute;
-    left: calc(50% - 486px);
-    top: 360px;
-    width: 296px;
-    height: 24px;
-}
-.not-a-member-sign-up-span {
-    color: #000000;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-}
-.not-a-member-sign-up-span2 {
-    color: #000000;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    text-decoration: underline;
-}
-.image {
-    width: 632px;
-    height: 595px;
-    position: absolute;
-    left: 676px;
-    top: 203px;
-    object-fit: cover;
-}
-.header-bg {
-    background: #a38f85;
-    width: 1231px;
-    height: 134px;
-    position: absolute;
-    left: calc(50% - 615px);
-    top: 29px;
-}
-.arrow-left img{
-    width: 3.52%;
-    height: 3.91%;
-    position: absolute;
-    right: 91.87%;
-    left: 4.61%;
-    bottom: 86.48%;
-    top: 9.62%;
-    overflow: visible;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-}
-.profile img{
-    width: 3.68%;
-    height: 5.76%;
-    position: absolute;
-    right: 5.93%;
-    left: 90.39%;
-    bottom: 86.31%;
-    top: 7.93%;
-    overflow: visible;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-}
-.logo img{
-    width: 137px;
-    height: 102px;
-    position: absolute;
-    left: 121px;
-    top: 45px;
-    object-fit: cover;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-}
+
