@@ -1,0 +1,152 @@
+body,
+html {
+    background-color: #e7d7c9;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    background: #a38f85;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px;
+    padding: 18px;
+    /* Adjust height as needed */
+}
+
+.logo {
+    max-width: 100%;
+    width: 137px;
+    height: auto;
+    padding: 18px;
+}
+
+.search-container {
+    background-color: #ede9e3;
+    padding: 8px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.search-icon {
+    padding-right: 6px;
+}
+
+.search-text-box {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.right-side {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    flex-shrink: 1;
+    width: 600px;
+}
+
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.update-form {
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.update {
+    text-align: right;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.fName{
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 40%;
+    height: 40px;
+}
+
+.lName{
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 40%;
+    height: 40px;
+}
+.username {
+    width: 100%; /* Ensure the input takes full width */
+    margin-top: 2%; /* Add space between inputs */
+    margin-left: 10%;
+    color: #9f9f9f;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    border: none;
+    background: #ede9e3;
+    border-radius: 15px;
+    width: 82%;
+    height: 40px
+}
+
+.update{
+    color: #000000;
+    font-family: "Adamina", sans-serif;
+    font-size: 43px;
+    font-weight: 400;
+}
+
+.update-button {
+    width: 100%; /* Ensure the button takes full width */
+    margin-top: 4%; /* Add space between inputs */
+    margin-left: 70%;
+    color: #000000;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    background: #d4b2a7;
+    border-radius: 15px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+
+}
+
+.image-container{
+    width: 40%;
+    float: left;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
