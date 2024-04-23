@@ -95,7 +95,7 @@
             $mId = $cur_book["ID"];
             echo "
               <div class=\"tile-container\">
-                <img class=\"tile\" src=\"$imPath\">
+                <img class=\"tile\" src=\"../assets/{$imPath}\">
                 <div class=\"title-text\">$title</div>
                 <div class = \"button-container\" style=\"float: left; display:flex\">
                 <form action=\"UpdateMedia.php\" method=\"POST\">
