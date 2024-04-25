@@ -30,21 +30,40 @@
   </header>
   <div class="container">
     <div class="add-media-heading">Add Media To Profile</div>
-    <input class="title-input" type="text" placeholder="Title">
-    <select class="type-selector">
-      <option value="book">Book</option>
-      <option value="movie">Movie</option>
-    </select>
-    <form class="media-type-selector">
-      <input type="radio" id="in-progress" name="options" value="in-progress">
-      <label for="option1">In progress</label><br>
+    <form method="POST" action="addMedia.php">
+      <div class="input-container">
+        <input class="title-input" type="text" placeholder="Title" name="title-input"> 
+      </div>
+      <div class="input-container">
+        <input class="dev-input" type="text" placeholder="Author/Director" name="dev-input">
+      </div>
 
-      <input type="radio" id="finished" name="options" value="finished">
-      <label for="option2">Finished</label><br>
-    </form>
-    <button class="add-button" type="button">
-      Add
-    </button>
+      <select class="type-selector" name="type-selector">
+        <option selected disabled>Type</option>
+        <option value="book">Book</option>
+        <option value="movie">Movie</option>
+      </select>
+      <div class="media-type-selector">
+        <input type="radio" id="in-progress" name="options" value="in-progress">
+        <label for="option1">In progress</label><br>
+
+        <input type="radio" id="finished" name="options" value="finished">
+        <label for="option2">Finished</label><br>
+      </div>
+      <div>
+        <select class="rating-selector" name="rating">
+          <option selected disabled>Rating</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <button class="add-button" type="submit" name="addMedia">
+        Add
+      </button>
+    </form> 
   </div>
 </body>
 
