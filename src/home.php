@@ -130,7 +130,10 @@
             echo '<img class="tile" src="../assets/' . $row["ImageName"] . '">';
             echo '<div class="rec-details">';
             echo '<div class="rec-title">' . $row["Title"] . '</div>';
-            echo '<div class="rec-attributes">' . $row["Genre"] . '</div>';
+            $sql2 = "SELECT * FROM MOVIES WHERE MID = '$row[ID]'";
+            $result2 = $conn->query($sql2);
+            $row2 = $result2->fetch_assoc();
+            echo '<div class="rec-attributes">' . $row["Genre"] . ', ' . $row2["Director"] . '</div>';
             echo '<div class="rec-description">' . $row["Description"] . '</div>';
         }    
         ?>
@@ -154,7 +157,10 @@
             echo '<img class="tile" src="../assets/' . $row["ImageName"] . '">';
             echo '<div class="rec-details">';
             echo '<div class="rec-title">' . $row["Title"] . '</div>';
-            echo '<div class="rec-attributes">' . $row["Genre"] . '</div>';
+            $sql2 = "SELECT * FROM BOOKS WHERE ISBN = '$row[ID]'";
+            $result2 = $conn->query($sql2);
+            $row2 = $result2->fetch_assoc();
+            echo '<div class="rec-attributes">' . $row["Genre"] . ', ' . $row2["Author"] . '</div>';
             echo '<div class="rec-description">' . $row["Description"] . '</div>';
         }    
         ?>
