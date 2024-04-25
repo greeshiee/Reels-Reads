@@ -11,7 +11,7 @@
 
 <body>
   <header class="flex-container">
-    <a href="#"><img class="logo" src="../assets/Logo.png" alt="Reels & Reads"></a>
+    <a href="home.php"><img class="logo" src="../assets/Logo.png" alt="Reels & Reads"></a>
     <div class="right-side">
       <div class="search-container">
         <a href="#">

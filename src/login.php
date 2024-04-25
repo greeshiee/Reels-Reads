@@ -13,7 +13,7 @@
             $row=$result->fetch_assoc();
             $_SESSION['email']=$row['Email'];
             $_SESSION['id'] = $row["ID"];
-            header("Location: home.html");
+            header("Location: home.php");
             exit();
         }
         else{
