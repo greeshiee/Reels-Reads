@@ -15,7 +15,7 @@
 ?>
 <div class="update">
     <header class="flex-container">
-        <a href="#"><img class="logo" src="../assets/Logo.png" alt="Reels & Reads"></a>
+        <a href="home.php"><img class="logo" src="../assets/Logo.png" alt="Reels & Reads"></a>
         <div class="right-side">
             <div class="search-container">
                 <a href="#">
@@ -28,7 +28,9 @@
                 </a>
                 <input class="search-text-box" type="text" placeholder="Search...">
             </div>
-            <img class="user-icon" src="../assets/user-circle.svg">
+            <a href="">
+                <img class="user-icon" src="../assets/user-circle.svg">
+            </a>
         </div>
     </header>
 
