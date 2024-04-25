@@ -42,32 +42,28 @@
         <p class="update">Update Profile</p>
         <form action="updateForm.php" method="POST" class="form">
             <?php
-            // Assuming you have established a database connection already and stored it in $conn
 
-            // Retrieve the fName, lName, and username from the database for a specific user
-            $id = $_SESSION['id']; // Assuming you have the user's ID in session
+            $id = $_SESSION['id'];
 
-            // Perform a SELECT query
+
             $selectQuery = "SELECT FName, LName, username FROM USER_INFO WHERE ID = '$id'";
             $result = $conn->query($selectQuery);
 
-            // Initialize variables for storing values
+
             $fName = "";
             $lName = "";
             $username = "";
 
-            // Check if the query executed successfully and returned a row
             if ($result && $result->num_rows > 0) {
-                // Fetch the row
+
                 $row = $result->fetch_assoc();
 
-                // Extract the fName, lName, and username values
+
                 $fName = $row['FName'];
                 $lName = $row['LName'];
                 $username = $row['username'];
             }
 
-            // Output the input fields with the retrieved values
             ?>
             <div class="name-container">
                 <input class="fName" value="<?php echo $fName; ?>" name="fName">
