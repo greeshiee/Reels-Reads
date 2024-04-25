@@ -28,6 +28,12 @@ html {
   color: #e7d7c9;
 }
 
+.input-container > div{
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
 .logo {
   max-width: 100%;
   width: 137px;
@@ -73,7 +79,7 @@ html {
   font-weight: lighter;
 }
 
-.title-input {
+.title-input, .dev-input {
   width: 350px;
   height: 35px;
   text-align: center;
@@ -83,7 +89,7 @@ html {
   background-color: #ede9e3;
 }
 
-.type-selector {
+.type-selector, .rating-selector {
   border: transparent;
   width: 80px;
   height: 25px;
