@@ -45,7 +45,7 @@ console_log($booksql);
         </button>
         <input class="search-text-box" id="search-text-small" type="text" name="Title" placeholder="Search...">
       </form>
-      <img class="user-icon" src="../assets/user-circle.svg">
+      <a href="profile.php" style="display: contents"><img class="user-icon" src="../assets/user-circle.svg"></a>
     </div>
   </header>
  
