@@ -87,6 +87,7 @@ html {
   border: transparent;
   border-radius: 7px;
   background-color: #ede9e3;
+  margin-top: 10px;
 }
 
 .type-selector, .rating-selector {
@@ -98,6 +99,7 @@ html {
   border-radius: 5px;
   text-align: center;
   background-color: #ede9e3;
+  margin-top: 10px;
 }
 
 .media-type-selector {
@@ -108,6 +110,7 @@ html {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+  margin-top: 10px;
 }
 
 .add-button {
@@ -117,4 +120,5 @@ html {
   width: 150px;
   height: 40px;
   font-size: 23px;
+  margin-top: 10px;
 }
