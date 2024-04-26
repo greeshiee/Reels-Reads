@@ -32,7 +32,7 @@ console_log($booksql);
 
 <body>
   <header class="flex-container">
-    <a href="#"><img class="logo" src="../assets/Logo.png" alt="Reels & Reads"></a>
+    <a href="home.php"><img class="logo" src="../assets/Logo.png" alt="Reels & Reads"></a>
     <div class="right-side">
       <form action="search.php" method="get" class="search-container">
         <button type="submit" class="search-submit">

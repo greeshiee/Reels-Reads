@@ -132,7 +132,7 @@ html {
   flex-shrink: 0;
   width: 200px;
   /* Set the width of each tile */
-  height: 200px;
+  height: 300px;
   /* Set the height of each tile */
   background-color: #D4B2A7;
   /* Set background color */
@@ -149,6 +149,7 @@ html {
   line-height: 150px;
   /* Vertically center text */
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .title-text {
