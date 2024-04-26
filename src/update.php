@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Reads&Reels</title>
-    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="../css/update.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Inter:wght@100..900&display=swap" rel="stylesheet">
