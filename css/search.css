@@ -16,6 +16,15 @@ html {
   /* Adjust height as needed */
 }
 
+.search-submit {
+  background: transparent;
+  color: transparent;
+  border: none;
+  border-width: 0;
+  font: inherit;
+  outline: none;
+}
+
 .logo {
   max-width: 100%;
   width: 137px;
@@ -45,11 +54,15 @@ html {
   padding-right: 6px;
 }
 
+#search-text-small {
+  width: 300px;
+}
+
 .search-text-box {
   background-color: transparent;
   border: none;
   outline: none;
-  width: 100%;
+  /* width: 100%; */
   flex-shrink: 1;
 }
 
@@ -83,10 +96,14 @@ html {
   font-size: 24px;
 }
 
+#main-search-text {
+  width: 800px;
+}
+
 .search-row {
   margin-left: 100px;
   margin-bottom: 50px;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .sliding-tile-container {
@@ -140,6 +157,12 @@ html {
   padding-left: 6px;
 }
 
+.tile-subtext {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
 .search-heading {
   font-size: 40px;
   font-weight: 400;
@@ -151,6 +174,7 @@ html {
 .search-results {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .add-button {
